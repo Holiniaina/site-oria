@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "Helvetica-Neue";
+  src: url("../../assets/fonts/HelveticaNeueMedium.otf");
+}
+
+a {
+  font-family: "Helvetica-Neue";
+}
+
+.recherche img,
+.burger img {
+  width: 30px;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+/* .div-logo img {
+  width: 100px;
+} */
+
+.lien {
+  margin-right: 0;
+}
+
+/* Style for the active link */
+.active-link {
+  position: relative;
+  color: #a02828; /* Optional: Color for active link */
+  font-weight: bold;
+}
+
+/* Adding the green square before the active link */
+.active-link:before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: var(--oria-theme);
+  margin-right: 8px;
+  vertical-align: middle;
+}

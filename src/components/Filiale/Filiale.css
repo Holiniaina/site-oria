@@ -1,0 +1,21 @@
+.filiale-hero {
+  background: url("https://res.cloudinary.com/doqmy6uc2/image/upload/v1744698070/filiale_bg_hero-DfCwsaht_y2s8qb.webp");
+  background-attachment: fixed;
+  background-position: bottom;
+  /* background-position: center; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: -2;
+}
+
+.filiale-layer {
+  background: rgba(0, 0, 0, 0.63);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: -1;
+}

@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Helvetica-Neue';
+  src: url('../../assets/fonts/HelveticaNeueMedium.otf')
+}
+
+h3 {
+  font-family: 'Helvetica-Neue';
+}

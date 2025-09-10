@@ -1,0 +1,21 @@
+.nos-projet-hero {
+  background: url("https://res.cloudinary.com/doqmy6uc2/image/upload/v1744698037/bg_project-hero-DFTHV6NP_ktxwhq.webp");
+  background-attachment: fixed;
+  background-position: bottom;
+  /* background-position: center; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: -2;
+}
+
+.nos-projet-layer {
+  background: rgba(0, 0, 0, 0.63);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: -1;
+}

@@ -1,0 +1,18 @@
+{"block":[{
+    "image":"/src/assets/icons/lamp.png", 
+    "title": "QUI SOMMES-NOUS?",
+    "texte1":" Nous regroupons des entités spécialisées dans les secteurs de la construction et de la gestion immobilière à Madagascar.",
+    "texte2":""
+  },
+  {
+      "image":"/src/assets/icons/maps.png", 
+    "title": "ADRESSE",
+    "texte1":" Antananarivo" ,
+    "texte2": "Soavimasoandro Lot II H 115 D"
+  },
+  {
+      "image":"/src/assets/icons/phone.png", 
+      "title": "CONTACT",
+      "texte1":" 020 23 314 14",
+      "texte2": " 020 23 314 14"
+  }]}
