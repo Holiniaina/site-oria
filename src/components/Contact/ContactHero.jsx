@@ -7,11 +7,11 @@ function ContactHero() {
   const { t } = useTranslation();
   const [isImageLoaded, setIsImageLoaded] = useState(false);
 
-  const blurHash = "LgGu?zWXMxNG_NIps9xZ-=Rkn$ay"; // lien BlurHash
+  const blurHash = "LgG[~9WXMxNG_NIpsSxZ-=Rkn$ay"; // lien BlurHash
 
   useEffect(() => {
     const img = new Image();
-    img.src = "https://res.cloudinary.com/doqmy6uc2/image/upload/v1744698045/illustration-construction-site-Y83nW9X2_hzhknc.webp";
+    img.src = "https://res.cloudinary.com/dknbojzhe/image/upload/v1757503268/illustration-construction-site-Y83nW9X2_hzhknc_chbwow_iiosvj.webp";
     img.onload = () => setIsImageLoaded(true);
   }, []);
 
@@ -20,7 +20,7 @@ function ContactHero() {
     <section className="contact-hero w-full mt-16 h-[30vh] flex justify-center items-center flex-col relative"
       style={{
         background: isImageLoaded
-          ? `url(${"https://res.cloudinary.com/doqmy6uc2/image/upload/v1744698045/illustration-construction-site-Y83nW9X2_hzhknc.webp"}) center/cover no-repeat background-attachment: fixed background-position: bottom` : "",
+          ? `url(${"https://res.cloudinary.com/dknbojzhe/image/upload/v1757503268/illustration-construction-site-Y83nW9X2_hzhknc_chbwow_iiosvj.webp"}) center/cover no-repeat background-attachment: fixed background-position: bottom` : "",
       }}>
       {!isImageLoaded && (
         <BlurhashCanvas

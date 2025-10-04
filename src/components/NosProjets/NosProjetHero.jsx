@@ -7,11 +7,11 @@ function NosProjetHero() {
   const {t} = useTranslation()
   const [isImageLoaded, setIsImageLoaded] = useState(false);
 
-  const blurHash = "LfH^q;xZ9uWG~Dj]Rjt69$R-xZox"; // lien BlurHash
+  const blurHash = "LfI4Fjt69bWG~Dj]Rjt69$R-xZox"; // lien BlurHash
 
   useEffect(() => {
     const img = new Image();
-    img.src = "https://res.cloudinary.com/doqmy6uc2/image/upload/v1744698037/bg_project-hero-DFTHV6NP_ktxwhq.webp";
+    img.src = "https://res.cloudinary.com/dknbojzhe/image/upload/v1757503268/bg_project-hero-DFTHV6NP_ktxwhq_s3veu0.webp";
     img.onload = () => setIsImageLoaded(true);
   }, []);
 
@@ -20,7 +20,7 @@ function NosProjetHero() {
     <section className="nos-projet-hero w-full mt-16 h-[30vh] flex justify-center items-center flex-col relative"
       style={{
         background: isImageLoaded
-          ? `url(${"https://res.cloudinary.com/doqmy6uc2/image/upload/v1744698037/bg_project-hero-DFTHV6NP_ktxwhq.webp"}) center/cover no-repeat background-attachment: fixed background-position: bottom` : "",
+          ? `url(${"https://res.cloudinary.com/dknbojzhe/image/upload/v1757503268/bg_project-hero-DFTHV6NP_ktxwhq_s3veu0.webp"}) center/cover no-repeat background-attachment: fixed background-position: bottom` : "",
       }}>
       {!isImageLoaded && (
         <BlurhashCanvas

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./About.css";
+import "./actualite.css";
 
 import { BlurhashCanvas } from "react-blurhash";
 import { useTranslation } from "react-i18next";
@@ -30,8 +30,8 @@ function AboutHero() {
         />
       )}
       <div className="about-layer"></div>
-      <h3 className="reveal text-[#868686] text-xs"> {t('who')} </h3>
-      <h1 className="reveal reveal-delay text-5xl text-white">{t('about')}</h1>
+      <h3 className="reveal text-[#868686] text-xs">HCM | SCI DM</h3>
+      <h1 className="reveal reveal-delay text-5xl text-white">{t('news')}</h1>
     </section>
   );
 }

@@ -3,6 +3,7 @@ import FilialeHCM from "@/components/FilialeHCM/FilialeHCM";
 import FilialeSCI from "@/components/FilialeSCI/FilialeSCI";
 import Hero from "@/components/Hero/Hero";
 import Projects from "@/components/Projects/Projects";
+import Actu from "@/components/Actu/Actu";
 
 function Home() {
   return (
@@ -11,6 +12,7 @@ function Home() {
       <FilialeHCM />
       <FilialeSCI />
       <Projects />
+      <Actu />
       <Arrow />
     </>
   );

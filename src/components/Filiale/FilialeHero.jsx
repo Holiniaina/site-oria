@@ -7,11 +7,11 @@ function FilialeHero() {
   const {t} = useTranslation();
   const [isImageLoaded, setIsImageLoaded] = useState(false);
 
-  const blurHash = "L88p=dWY0gpJ}Yt87MS2+ZaeF2V@"; // lien BlurHash
+  const blurHash = "LMFr^p00?bM{_ND%Vrx]NfxtD%xu"; // lien BlurHash
 
   useEffect(() => {
     const img = new Image();
-    img.src = "https://res.cloudinary.com/doqmy6uc2/image/upload/v1744698070/filiale_bg_hero-DfCwsaht_y2s8qb.webp";
+    img.src = "https://res.cloudinary.com/dknbojzhe/image/upload/v1757503269/filiale_bg_hero-DfCwsaht_y2s8qb_kzcxrs.webp";
     img.onload = () => setIsImageLoaded(true);
   }, []);
 
@@ -20,7 +20,7 @@ function FilialeHero() {
     <section className="filiale-hero w-full mt-16 h-[30vh] flex justify-center items-center flex-col relative"
       style={{
         background: isImageLoaded
-          ? `url(${"https://res.cloudinary.com/doqmy6uc2/image/upload/v1744698070/filiale_bg_hero-DfCwsaht_y2s8qb.webp"}) center/cover no-repeat background-attachment: fixed background-position: bottom` : "",
+          ? `url(${"https://res.cloudinary.com/dknbojzhe/image/upload/v1757503269/filiale_bg_hero-DfCwsaht_y2s8qb_kzcxrs.webp"}) center/cover no-repeat background-attachment: fixed background-position: bottom` : "",
       }}>
       {!isImageLoaded && (
         <BlurhashCanvas

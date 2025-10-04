@@ -10,46 +10,57 @@ function ProjectList() {
   const [loadedImages, setLoadedImages] = useState([]);
 
   const images = [
-    { src: "https://res.cloudinary.com/doqmy6uc2/image/upload/v1744620368/image8_xhz0wx.webp", category: 'DESIGN INTERIEUR', blurhash: 'LDJRU65Z~B000AcGZ~x]01E3D%xW' },
-    { src: "https://res.cloudinary.com/doqmy6uc2/image/upload/v1744620421/image9_jibz3l.webp", category: 'DESIGN INTERIEUR', blurhash: 'L-G]UR?wWWROR.RkfQoeWBaejsj]' },
-    { src: "https://res.cloudinary.com/doqmy6uc2/image/upload/v1744620400/image10_wknnza.webp", category: 'DESIGN INTERIEUR', blurhash: 'LKG[=_IW~VIV0rt8IAog03bIE1t7' },
-    { src: "https://res.cloudinary.com/doqmy6uc2/image/upload/v1744620410/image12_rzfvy0.webp", category: 'DESIGN INTERIEUR', blurhash: 'L3D]o89F~q_300_3?bM{%MD%00M{' },
-    { src: "https://res.cloudinary.com/doqmy6uc2/image/upload/v1744878867/image16_mkshlc.webp", category: 'DESIGN INTERIEUR', blurhash: 'LEE3I.a$0KNH~qjZ9FRjN2ayM_s:' },
-    { src: "https://res.cloudinary.com/doqmy6uc2/image/upload/v1744878875/image17_tbxxwg.webp", category: 'DESIGN INTERIEUR', blurhash: 'LEE3I.a$0KNH~qjZ9FRjN2ayM_s:' },
-    { src: "https://res.cloudinary.com/doqmy6uc2/image/upload/v1744878884/image18_e66hum.webp", category: 'DESIGN INTERIEUR', blurhash: 'LEE3I.a$0KNH~qjZ9FRjN2ayM_s:' },
-    { src: "https://res.cloudinary.com/doqmy6uc2/image/upload/v1744878893/image19_ypkdfn.webp", category: 'DESIGN INTERIEUR', blurhash: 'LEE3I.a$0KNH~qjZ9FRjN2ayM_s:' },
-    { src: "https://res.cloudinary.com/doqmy6uc2/image/upload/v1744878884/image20_dipqen.webp", category: 'DESIGN INTERIEUR', blurhash: 'LEE3I.a$0KNH~qjZ9FRjN2ayM_s:' },
-    { src: "https://res.cloudinary.com/doqmy6uc2/image/upload/v1744878906/image27_ztml89.webp", category: 'DESIGN INTERIEUR', blurhash: 'LEE3I.a$0KNH~qjZ9FRjN2ayM_s:' },
-    { src: "https://res.cloudinary.com/doqmy6uc2/image/upload/v1744878906/image28_ki7r0t.webp", category: 'DESIGN INTERIEUR', blurhash: 'LEE3I.a$0KNH~qjZ9FRjN2ayM_s:' },
-    { src: "https://res.cloudinary.com/doqmy6uc2/image/upload/v1748605661/image40_ueigb7.jpg", category: 'DESIGN INTERIEUR', blurhash: 'LEE3I.a$0KNH~qjZ9FRjN2ayM_s:' },
-    { src: "https://res.cloudinary.com/doqmy6uc2/image/upload/v1744620336/image1_e6cuic.webp", category: 'BÂTIMENTS', blurhash: 'LTEyocR*RiWBO_jYoJofI^V@oJaz' },
-    { src: "https://res.cloudinary.com/doqmy6uc2/image/upload/v1744620414/image2_ygw4f1.webp", category: 'BÂTIMENTS', blurhash: 'L8Fr|y?E_44m00~q%Lxu01RPD%%g' },
-    { src: "https://res.cloudinary.com/doqmy6uc2/image/upload/v1744620419/image3_cwjhuk.webp", category: 'BÂTIMENTS', blurhash: 'LGKBH;00%MWA~V-=%2j@-=jEWBWB' },
-    { src: "https://res.cloudinary.com/doqmy6uc2/image/upload/v1744620436/image4_mwvcay.webp", category: 'BÂTIMENTS', blurhash: 'L5FY_lQ+V?xt00bK?bjYyZf-D$oz' },
-    { src: "https://res.cloudinary.com/doqmy6uc2/image/upload/v1744620458/image6_qnhdq8.webp", category: 'BÂTIMENTS', blurhash: 'LALEE40M^h00EE~qR3-:05RO9bjD' },
-    { src: "https://res.cloudinary.com/doqmy6uc2/image/upload/v1744620457/image13_jnocam.webp", category: 'BÂTIMENTS', blurhash: 'LEE3I.a$0KNH~qjZ9FRjN2ayM_s:' },
-    { src: "https://res.cloudinary.com/doqmy6uc2/image/upload/v1744878950/image21_ukhpmq.webp", category: 'BÂTIMENTS', blurhash: 'LEE3I.a$0KNH~qjZ9FRjN2ayM_s:' },
-    { src: "https://res.cloudinary.com/doqmy6uc2/image/upload/v1744878807/image37_swvlrg.webp", category: 'BÂTIMENTS', blurhash: 'LEE3I.a$0KNH~qjZ9FRjN2ayM_s:' },
-    { src: "https://res.cloudinary.com/doqmy6uc2/image/upload/v1748605661/image41_qp104p.jpg", category: 'BÂTIMENTS', blurhash: 'LEE3I.a$0KNH~qjZ9FRjN2ayM_s:' },
-    { src: "https://res.cloudinary.com/doqmy6uc2/image/upload/v1744620457/image5_numd6d.webp", category: 'ARCHITECTURE', blurhash: 'L3Ey#b-O00%W0C01p~Q^00^,4V_K' },
-    { src: "https://res.cloudinary.com/doqmy6uc2/image/upload/v1744620432/image7_rfxxtw.webp", category: 'ARCHITECTURE', blurhash: 'LZHezr9c?ao$.ASjn#kDIqbIaJM|' },
-    { src: "https://res.cloudinary.com/doqmy6uc2/image/upload/v1744620405/image11_tjjqm4.webp", category: 'ARCHITECTURE', blurhash: 'L5F~Nv~o4VW94=ocD+9Z?I_201%K' },
-    { src: "https://res.cloudinary.com/doqmy6uc2/image/upload/v1744878846/image41_xshxdb.webp", category: 'ARCHITECTURE', blurhash: 'LEE3I.a$0KNH~qjZ9FRjN2ayM_s:' },
-    { src: "https://res.cloudinary.com/doqmy6uc2/image/upload/v1744878814/image46_xyfcu1.webp", category: 'ARCHITECTURE', blurhash: 'LEE3I.a$0KNH~qjZ9FRjN2ayM_s:' },
-    { src: "https://res.cloudinary.com/doqmy6uc2/image/upload/v1744878803/image42_o8tozd.webp", category: 'ARCHITECTURE', blurhash: 'LEE3I.a$0KNH~qjZ9FRjN2ayM_s:' },
-    { src: "https://res.cloudinary.com/doqmy6uc2/image/upload/v1744878804/image36_p7jd3w.webp", category: 'ARCHITECTURE', blurhash: 'LEE3I.a$0KNH~qjZ9FRjN2ayM_s:' },
-    { src: "https://res.cloudinary.com/doqmy6uc2/image/upload/v1744878990/image14_vmwfkw.webp", category: 'TERRASSEMENT', blurhash: 'LEE3I.a$0KNH~qjZ9FRjN2ayM_s:' },
-    { src: "https://res.cloudinary.com/doqmy6uc2/image/upload/v1744878995/image15_fl1hp4.webp", category: 'TERRASSEMENT', blurhash: 'LEE3I.a$0KNH~qjZ9FRjN2ayM_s:' },
-    { src: "https://res.cloudinary.com/doqmy6uc2/image/upload/v1744878819/image48_indbjw.webp", category: 'TERRASSEMENT', blurhash: 'LEE3I.a$0KNH~qjZ9FRjN2ayM_s:' },
-    { src: "https://res.cloudinary.com/doqmy6uc2/image/upload/v1744878850/image49_vhtwys.webp", category: 'TERRASSEMENT', blurhash: 'LEE3I.a$0KNH~qjZ9FRjN2ayM_s:' },
-    { src: "https://res.cloudinary.com/doqmy6uc2/image/upload/v1744878815/image23_sffwk2.webp", category: 'PEINTURE', blurhash: 'LEE3I.a$0KNH~qjZ9FRjN2ayM_s:' },
-    { src: "https://res.cloudinary.com/doqmy6uc2/image/upload/v1744878954/image24_u8pbwj.webp", category: 'PEINTURE', blurhash: 'LEE3I.a$0KNH~qjZ9FRjN2ayM_s:' },
-    { src: "https://res.cloudinary.com/doqmy6uc2/image/upload/v1744878962/image25_nagak0.webp", category: 'PEINTURE', blurhash: 'LEE3I.a$0KNH~qjZ9FRjN2ayM_s:' },
-    { src: "https://res.cloudinary.com/doqmy6uc2/image/upload/v1744878960/image26_uw76ue.webp", category: 'PEINTURE', blurhash: 'LEE3I.a$0KNH~qjZ9FRjN2ayM_s:' },
-    { src: "https://res.cloudinary.com/doqmy6uc2/image/upload/v1744878914/image30_quaexa.webp", category: 'METALLURGIE', blurhash: 'LEE3I.a$0KNH~qjZ9FRjN2ayM_s:' },
-    { src: "https://res.cloudinary.com/doqmy6uc2/image/upload/v1744878923/image31_ubde4x.webp", category: 'METALLURGIE', blurhash: 'LEE3I.a$0KNH~qjZ9FRjN2ayM_s:' },
-    { src: "https://res.cloudinary.com/doqmy6uc2/image/upload/v1744878944/image34_mpizhb.webp", category: 'METALLURGIE', blurhash: 'LEE3I.a$0KNH~qjZ9FRjN2ayM_s:' },
+    { src: "https://res.cloudinary.com/dknbojzhe/image/upload/v1757488677/P1116995_z8koaa.webp", category: 'DESIGN INTERIEUR', blurhash: 'L2B:y*0,~V$y00^jRPIp00-pIVn%' },
+    { src: "https://res.cloudinary.com/dknbojzhe/image/upload/v1757488677/P1117033_btmkru.webp", category: 'DESIGN INTERIEUR', blurhash: 'L5F=~+00?v00i^9G4okC00.900~q' },
+    { src: "https://res.cloudinary.com/dknbojzhe/image/upload/v1757488676/P1117059_v5ahoi.webp", category: 'DESIGN INTERIEUR', blurhash: 'L6FFvs0100%M~WRl00-:R;oJ?aoc' },
+    { src: "https://res.cloudinary.com/dknbojzhe/image/upload/v1757488681/DSC_8970_eeirl6.webp", category: 'DESIGN INTERIEUR', blurhash: 'L7HVV9=y00_KDM9sJ4H^8{RR9F%K' },
+    { src: "https://res.cloudinary.com/dknbojzhe/image/upload/v1757488677/DSC_8978_amaybx.webp", category: 'DESIGN INTERIEUR', blurhash: 'L5HxyX00010E00=OISOf00kt~q#~' },
+    
+    { src: "https://res.cloudinary.com/dknbojzhe/image/upload/v1757486709/DJI_0973_jeymgb.webp", category: 'ARCHITECTURE', blurhash: 'LVE{z$axe.ofs+ayWBjt~qWVRjfQ' },
+    { src: "https://res.cloudinary.com/dknbojzhe/image/upload/v1757486710/P1091543_nvnxtq.webp", category: 'ARCHITECTURE', blurhash: 'L8F$CP00.T9E-onzXUI9008_?H9Z' },
+    { src: "https://res.cloudinary.com/dknbojzhe/image/upload/v1757486708/P1091676_bvgmwr.webp", category: 'ARCHITECTURE', blurhash: 'L28z#}^gI_R2004nM|s.00gk-i.9' },
+    { src: "https://res.cloudinary.com/dknbojzhe/image/upload/v1757486710/P1091785_ntgpmt.webp", category: 'ARCHITECTURE', blurhash: 'LVIX{pD$?wkD?wM{oft8tSofMxog' },
+    { src: "https://res.cloudinary.com/dknbojzhe/image/upload/v1757486709/P1116973_wwxxdj.webp", category: 'ARCHITECTURE', blurhash: 'LHGlL,xu~qoM4:s:D*oftSRQM{Rj' },
+    { src: "https://res.cloudinary.com/dknbojzhe/image/upload/v1757486708/P1117078_ypjszb.webp", category: 'ARCHITECTURE', blurhash: 'LDCjCH~Vxt%L9FWC-:%Lt8ofogoy' },
+
+    { src: "https://res.cloudinary.com/dknbojzhe/image/upload/v1757489432/P1116963_pnveyd.webp", category: 'CARRELAGE', blurhash: 'LOIhvvI[bIkCROWBWCbI~qoz9Zj[' },
+    { src: "https://res.cloudinary.com/dknbojzhe/image/upload/v1757489432/P1117015_smepk1.webp", category: 'CARRELAGE', blurhash: 'LLD^7bRkRkV@B@M|s.WB.9V@V@of' },
+    { src: "https://res.cloudinary.com/dknbojzhe/image/upload/v1757489431/P1117055_gwhh26.webp", category: 'CARRELAGE', blurhash: 'L1Hx+-F^00of00EM_3t700^,Q,tR' },
+    { src: "https://res.cloudinary.com/dknbojzhe/image/upload/v1757489432/P1117085_rlqr4e.webp", category: 'CARRELAGE', blurhash: 'LAGIu{^+9GWVD#M{RkM{_4D%aeM|' },
+
+    { src: "https://res.cloudinary.com/dknbojzhe/image/upload/v1758713261/Image_2025-09-24_115500_1.1.1_f8yfmh.webp", category: 'BÂTIMENTS', blurhash: 'L2HBMPO@00^j~V9ZN10100-:PUX9' },
+    { src: "https://res.cloudinary.com/dknbojzhe/image/upload/v1758713261/Image_2025-09-24_115709_1.2.1_kzxs8l.webp", category: 'BÂTIMENTS', blurhash: 'LDI}bUnhVtD%~WE2D%xvMdWANGxu' },
+    { src: "https://res.cloudinary.com/dknbojzhe/image/upload/v1757489977/DJI_0982_trvarg.webp", category: 'BÂTIMENTS', blurhash: 'LBF6C4^+tSoy?^j=-pt6M]IT9GM{' },
+    { src: "https://res.cloudinary.com/dknbojzhe/image/upload/v1757489970/DSC_8853_lu39hg.webp", category: 'BÂTIMENTS', blurhash: 'LeI~DWxvxv%Nt:t8a~WA?caeM_M{' },
+    { src: "https://res.cloudinary.com/dknbojzhe/image/upload/v1757489972/P1117024_ydd8kk.webp", category: 'BÂTIMENTS', blurhash: 'L9D^4Z~3aKt60a-P?Gt7Iw9zD$Rj' },
+    { src: "https://res.cloudinary.com/dknbojzhe/image/upload/v1757489974/P1117139_eziskh.webp", category: 'BÂTIMENTS', blurhash: 'LKC7g88wE2?v?wQ,NHxvadbbRjjE' },
+    { src: "https://res.cloudinary.com/dknbojzhe/image/upload/v1757489971/P1117166_pzpqa1.webp", category: 'BÂTIMENTS', blurhash: 'LhE:rUbJM|ozyZRjWBkDkrRjoLay' },
+    { src: "https://res.cloudinary.com/dknbojzhe/image/upload/v1757489970/P1117190_jomdrq.webp", category: 'BÂTIMENTS', blurhash: 'LaD0}#McRPtQ?wVqRjt7g2obRjWU' },
+    { src: "https://res.cloudinary.com/dknbojzhe/image/upload/v1757489971/P1117228_wuehwg.webp", category: 'BÂTIMENTS', blurhash: 'LdEpNK%MM{Rk.TS5RPocyDofWBj]' },
+   
+    { src: "https://res.cloudinary.com/dknbojzhe/image/upload/v1757490604/DSC_8840_f7hxbr.webp", category: 'RENOVATION', blurhash: 'L2Eyri%M4p?vXqogIAM|Mxt800n#' },
+    { src: "https://res.cloudinary.com/dknbojzhe/image/upload/v1757490602/DSC_8947-Avec_accentuation-Bruit_u9ocvx.webp", category: 'RENOVATION', blurhash: 'LDE:0j~qIUxu8^oIxuaeIURjflay' },
+    { src: "https://res.cloudinary.com/dknbojzhe/image/upload/v1757490602/P1091660_pkgibd.webp", category: 'RENOVATION', blurhash: 'LFF=:Z%1~p%Noe_3-;%MIV-;Rlxa' },
+
+     { src: "https://res.cloudinary.com/dknbojzhe/image/upload/v1758701561/DJI_0081_k3f5ue.webp", category: 'TERRASSEMENT', blurhash: 'L2HTHe00}Dx]05vg9v~B5-xu0z,W' },
+     { src: "https://res.cloudinary.com/dknbojzhe/image/upload/v1758701561/DJI_0161_qisytq.webp", category: 'TERRASSEMENT', blurhash: 'L8IMyQ}@0fOE03K5-oWA11-VRjs.' },
+     { src: "https://res.cloudinary.com/dknbojzhe/image/upload/v1758701560/P1138813_bunslt.webp", category: 'TERRASSEMENT', blurhash: 'LyHUw^tTo~adPXWYj]V@fAVri^ju' },
+     { src: "https://res.cloudinary.com/dknbojzhe/image/upload/v1758701560/P1138826_zwj41s.webp", category: 'TERRASSEMENT', blurhash: 'LsHUquxvW=bcL4W?WBkCs?V?V@oL' },
+    { src: "https://res.cloudinary.com/dknbojzhe/image/upload/v1758701560/P1175006_c1h1n1.webp", category: 'TERRASSEMENT', blurhash: 'LtF$q~t7bdR*K-oLjZkDR5R+adof' },
+    { src: "https://res.cloudinary.com/dknbojzhe/image/upload/v1757490756/image14_vmwfkw_bgztdj.webp", category: 'TERRASSEMENT', blurhash: 'LKG8TP-ps.xD2|NxRjWByZoKR*NH' },
+    { src: "https://res.cloudinary.com/dknbojzhe/image/upload/v1757490755/image15_fl1hp4_tmkh7v.webp", category: 'TERRASSEMENT', blurhash: 'L9IgQ2%200-q~WV@9t?H9uxGjZxa' },
+    { src: "https://res.cloudinary.com/dknbojzhe/image/upload/v1757490754/image48_indbjw_iaao79.webp", category: 'TERRASSEMENT', blurhash: 'LwH-_wbco#t8T}juj]j[s=V@V?V@' },
+    { src: "https://res.cloudinary.com/dknbojzhe/image/upload/v1757490752/image49_vhtwys_sf8qh1.webp", category: 'TERRASSEMENT', blurhash: 'LuHBrsaexbn#PXbIR*WBXBbHn$of' },
+
+    { src: "https://res.cloudinary.com/dknbojzhe/image/upload/v1757490996/DSC_8916-Avec_accentuation-Bruit_ukhv0w.webp", category: 'PEINTURE', blurhash: 'LMG]8d%Mx]WE~pWARPRiMwfkRPt8' },
+    { src: "https://res.cloudinary.com/dknbojzhe/image/upload/v1757490996/DSC_8919_epmgv1.webp", category: 'PEINTURE', blurhash: 'LJIFG9?wbJof_1IURiofDhWBozt8' },
+    { src: "https://res.cloudinary.com/dknbojzhe/image/upload/v1757490997/DSC_8924_lmzyjc.webp", category: 'PEINTURE', blurhash: 'L9I#_Z_MMyD%00X8ofa|01jFRj%L' },
+    { src: "https://res.cloudinary.com/dknbojzhe/image/upload/v1757490996/DSC_8942-Avec_accentuation-Bruit_jrgwcd.webp", category: 'PEINTURE', blurhash: 'LADJ06~pt8D*00oejtRj-o%M%2-o' },
+    
+    { src: "https://res.cloudinary.com/dknbojzhe/image/upload/v1757491393/DSC_9005_eyrh8j.webp", category: 'METALLURGIE', blurhash: 'L5CGJf00158^RjMx4T.T0Ls.^*t8' },
+    { src: "https://res.cloudinary.com/dknbojzhe/image/upload/v1757491393/DSC_9026_jsozcl.webp", category: 'METALLURGIE', blurhash: 'LRF~jh~p_3t6jrxuj[WDRPt7M{R-' },
   ];
+
 
   const handleImageLoad = (index) => {
     setLoadedImages((prev) => [...prev, index]);
@@ -133,7 +144,7 @@ function ProjectList() {
               <span className="inline-block w-2 h-2 bg-[#868686] mr-2"></span>
             )}
             {t('filter6')}
-          </li> 
+          </li>
           <li
             onClick={() => handleFilterChange('PEINTURE')}
             className={`cursor-pointer transition-transform duration-300 filter-item ${filter === 'PEINTURE' ? 'transform scale-105' : ''
@@ -175,9 +186,7 @@ function ProjectList() {
               <img
                 className="w-full h-auto object-cover shadow-md transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg"
                 src={image.src}
-                //src={`${image.src.replace('/upload/', '/upload/f_auto,q_auto,w_800/')}`}
                 alt={`Image ${index + 1}`}
-                loading="lazy"
                 onLoad={() => handleImageLoad(index)}
                 style={{ display: loadedImages.includes(index) ? 'block' : 'none' }}
               />

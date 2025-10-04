@@ -5,11 +5,11 @@ import { BlurhashCanvas } from "react-blurhash";
 function SectionImage() {
   const [isImageLoaded, setIsImageLoaded] = useState(false);
 
-  const blurHash = "LfG+XRWXMxNG_NIpsSxZ.8Rkn$ay"; // lien BlurHash
+  const blurHash = "LAH_;#oB050t00%QRMMa05%P$[M|"; // lien BlurHash
 
   useEffect(() => {
     const img = new Image();
-    img.src = "https://res.cloudinary.com/doqmy6uc2/image/upload/v1744867917/image9_cuhpo3.webp";
+    img.src = "https://res.cloudinary.com/dknbojzhe/image/upload/v1757503267/DSC_8980_bt5gph.webp";
     img.onload = () => setIsImageLoaded(true);
   }, []);
 
@@ -19,7 +19,7 @@ function SectionImage() {
         className="h-full w-full rounded-md relative"
         style={{
           background: isImageLoaded
-            ? `url(${"https://res.cloudinary.com/doqmy6uc2/image/upload/v1744867917/image9_cuhpo3.webp"}) center/cover no-repeat`
+            ? `url(${"https://res.cloudinary.com/dknbojzhe/image/upload/v1757503267/DSC_8980_bt5gph.webp"}) center/cover no-repeat`
             : "",
         }}
       >

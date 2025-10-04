@@ -5,7 +5,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
- import Autoplay from "embla-carousel-autoplay";
+import Autoplay from "embla-carousel-autoplay";
 import { Button } from "../ui/button";
 import "./Hero.css";
 import { Link } from "react-router-dom";
@@ -17,12 +17,12 @@ function Hero() {
 
   const [isImageLoaded, setIsImageLoaded] = useState(false);
 
-  const blurHash = "L6G*l}0002xB010h?FWU0:xB0i}?"; 
+  const blurHash = "L4HVO|+@00?;0G00yxDT00=}RR_L"; 
   const { t } = useTranslation();
 
   useEffect(() => {
     const img = new Image();
-    img.src = "https://res.cloudinary.com/doqmy6uc2/image/upload/v1744698050/bg_home_hero-DiTp72_w_fcq5p6.webp";
+    img.src = "https://res.cloudinary.com/dknbojzhe/image/upload/v1757488681/DSC_8970_eeirl6.webp";
     img.onload = () => setIsImageLoaded(true);
   }, []);
 
@@ -33,7 +33,7 @@ function Hero() {
       id="hero"
       style={{
         background: isImageLoaded
-          ? `url(${'https://res.cloudinary.com/doqmy6uc2/image/upload/v1744698050/bg_home_hero-DiTp72_w_fcq5p6.webp'}) center/cover no-repeat background-attachment:fixed background-position: bottom`: "",
+          ? `url(${'https://res.cloudinary.com/dknbojzhe/image/upload/v1757488681/DSC_8970_eeirl6.webp'}) center/cover no-repeat background-attachment:fixed background-position: bottom`: "",
       }}
     >
       {!isImageLoaded && (

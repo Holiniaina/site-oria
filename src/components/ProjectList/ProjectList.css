@@ -5,14 +5,17 @@
 
 li {
   transition: transform 0.3s ease;
-  font-weight: 500;
   display: inline-block;
+  font-weight: 500;
+  padding: 6px 12px;
+  /*background-color:  red;*/
 }
 
 li:hover {
   transform: scale(1.1);
   transition: transform 0.3s ease;
   font-weight: 600;
+  color: #a02828;
 }
 
 .filters-container {
@@ -21,6 +24,8 @@ li:hover {
   justify-content: space-between;
   gap: 10px;
   margin-bottom: 20px;
+  /*background-color:  gray;*/
+
 }
 
 .filters-container .filter-item {
@@ -28,7 +33,7 @@ li:hover {
 }
 
 .filters-container .filter-item::after {
-  content: '|';
+  content: ' |';
   margin-left: 10px;
 }
 

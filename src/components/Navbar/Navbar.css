@@ -27,7 +27,7 @@ a {
 .active-link {
   position: relative;
   color: #a02828; /* Optional: Color for active link */
-  font-weight: bold;
+  font-weight: bold; 
 }
 
 /* Adding the green square before the active link */

@@ -140,6 +140,18 @@ export default function Navbar() {
           >
             {t('navcontact')}
           </Link>
+
+           <Link
+            to="/actualite"
+            onClick={handleLinkClick}
+            className={`hover:text-[#a02828] text-[10px] md:text-[13px] ${
+              location.pathname === "/contact" ? "active-link" : ""
+            }`}
+          >
+            {t('navnews')}
+          </Link>
+
+
         </div>
         <div className="flex items-center space-x-4">
           <button
