@@ -1,16 +1,39 @@
 {  
-     "ViewArticle": "Voir tous les articles",
+    "articles" :{
+          "immeuble-edonia": {
+               "title": "Immeuble Edonia",
+               "description": "Projet Immeuble Edonia",
+               "date": "8 Octobre 2025",
+               "content": "Découvrez le résultat final d’un projet réalisé par Oria Group !<br/>Cette vidéo vous présente un immeuble entièrement construit et livré, mettant en avant notre expertise dans le gros œuvre, le second œuvre et l’aménagement extérieur. Inspirez-vous de notre savoir-faire et voyez comment nous transformons les plans en bâtiments solides et fonctionnels."
+          },
+          
+          "oria-groupe": { 
+               "title": "Oria Groupe",
+               "description": "Une nouvelle entité au service de l’excellence immobilière à Madagascar",
+               "date": "03 Novembre 2025",
+               "content": "Issue de la fusion des sociétés HCM et SCIDM, deux acteurs majeurs de la construction et de la gestion immobilière, Oria Groupe incarne une nouvelle vision du secteur à Madagascar. En unissant leur savoir-faire et leur expérience, ces deux entreprises s’engagent à redéfinir les standards du marché à travers des projets innovants, durables et adaptés aux besoins du pays."
+          },
+          "strategies-dentreprise-modernes": {
+               "title": "Immeuble Edonia",
+               "description": "Découvrez les avancées technologiques qui transforment notre quotidien.",
+               "date": "15 Mars 2024",
+               "content": "<p>Contenu traduit pour le troisième article...</p>"
+          }     
+         
+      },
+     "ViewArticle": "VOIR TOUS NOS ARTICLES",
      "questionArticle": "Vous avez aimé cet article ?",
      "Discover": "Découvrez nos autres actualités et restez informé des dernières tendances.",
-     "tuned": "Restez informé des dernières tendances et innovations",
+     "tuned": "Restez informé des dernières techniques et solutions pour vos projets de construction et aménagement.",
      "readArticle": "Lire article",
+     "readmore": "Lire plus",
      "newsAbout": "Découvrez toutes les dernières nouvelles et mises à jour de notre entreprise. Restez informé de nos projets, événements et annonces importantes en temps réel.",
      "majActu": "SUIVEZ TOUTES NOS ACTUALITÉS",
      "news": "NOS ACTUALITÉS",
      "navhome": "ACCUEIL",
      "navabout": "A PROPOS",
      "navsubsidiaries": "NOS FILIALES",
-     "navproject": "NOS PROJETS",
+     "navproject": "NOS PROJETS", 
      "navcontact": "CONTACTS", 
      "navnews": "ACTUALITÉS",
      "carouselHCM" : "Terrassement, Assainissement, Construction Gros œuvre, Travaux de second Œuvre, Aménagement extérieur (Pavage, Espace vert,…). Agréer par SOCOTEC, APAVE, Suivi par LNTPB",
@@ -33,7 +56,8 @@
      "tolifeproject":"DES PROJETS QUI PRENNENT VIE",
      "projectabout" : "Chaque projet que nous réalisons est une œuvre unique, conçue sur mesure pour répondre aux aspirations de nos clients et s'intégrer harmonieusement dans son environnement.",
      "newBuilding" : "NOUVEAU BÂTIMENT",
-     "seeprojects" : "Voir tout nos projets",
+     "seeprojects" : "VOIR TOUT NOS PROJECTS",
+     "seeprojectsmin" : "Decouvrir nos projets",
      "trust": " ILS NOUS FONT CONFIANCE",
      "ourclient" : "NOS CLIENTS",
      "clientabout" : "HCM et SCI DM accompagnent une clientèle variée, des particuliers souhaitant acquérir leur résidence principale aux entreprises à la recherche de locaux professionnels.",
@@ -41,7 +65,7 @@
      "whotext": "Nous regroupons des entités spécialisées dans les secteurs de la construction et de la gestion immobilière à Madagascar.",
      "address" : "ADRESSE",
      "hours": "Nos horaires",
-     "workingday" : "Jours Ouvrables: ",
+     "workingday" : "Jours Ouvrables: ", 
      "workingdays" : "Lundi - Vendredi : 8h-17h30",
      "saturday" : "Samedi : 8h-12h",
      "vacation":" Période de vacances:",

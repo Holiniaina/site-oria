@@ -1,14 +1,36 @@
 {  
-      "ViewArticle": "View all articles",
+      "articles" :{
+            "immeuble-edonia": {
+                  "title": "Immeuble Edonia",
+                  "description": "Edonia Building Project",
+                  "date": "October 8, 2025",
+                  "content": "Discover the final result of a project completed by Oria Group! <br/> This video showcases a fully constructed and delivered building, highlighting our expertise in structural work, finishing, and exterior development. See how we turn plans into solid, functional buildings and get inspired by our craftsmanship."
+            },
+            
+            "oria-groupe": {
+                  "title": "Oria Groupe",
+                  "description": "A New Entity Driving Real Estate Excellence in Madagascar",
+                  "date": "November 3, 2025",
+                  "content": "Born from the merger of HCM and SCIDM, two leading players in construction and real estate management, Oria Groupe represents a new vision for the sector in Madagascar. By combining their expertise and experience, these two companies are committed to redefining industry standards through innovative, sustainable projects tailored to the country’s evolving needs."
+            },
+            "strategies-dentreprise-modernes": {
+                  "title": "Immeuble Edonia",
+                  "description": "Découvrez les avancées technologiques qui transforment notre quotidien.",
+                  "date": "15 Mars 2024",
+                  "content": "<p>Contenu traduit pour le troisième article...</p>"
+            }     
+      },
+      
+      "ViewArticle": "VIEW ALL ARTICLES",
      "questionArticle": "Did you like this article?",
      "Discover": "Discover our other news and stay informed about the latest trends.",
-     "tuned": "Stay updated on the latest trends and innovations",
-     "readArticle": "Read the article",
+     "tuned": "Stay informed about the latest techniques and solutions for your construction and landscaping projects.",
+     "readmore": "Read more",
      "newsAbout": "Discover all the latest news and updates from our company. Stay informed about our projects, events, and important announcements in real time.",
      "majActu": "KEEP UP WITH ALL OUR NEWS",
      "news": "NEWS",
      "navhome":"HOME",
-     "navabout": "ABOUT",
+     "navabout": "ABOUT", 
      "navsubsidiaries": "OUR  SUBSIDIARIES",
      "navproject": "OUR PROJECTS", 
      "navcontact": "CONTACTS",
@@ -33,7 +55,8 @@
      "tolifeproject":"PROJECTS THAT COME TO LIFE",
      "projectabout" : "Each project we undertake is a unique creation, custom-designed to meet the aspirations of our clients and seamlessly integrate into its environment.",
      "newBuilding" : "NEW BUILDING",
-     "seeprojects" : "See all our projects",
+     "seeprojects" : "See all our projects", 
+     "seeprojectsmin" : "Explore projects",
      "trust": "THEY TRUST US",
      "ourclient" : "OUR CLIENTS",
      "clientabout" : "HCM and SCI DM support a diverse clientele, from individuals looking to acquire their primary residence to businesses in search of professional premises.",
